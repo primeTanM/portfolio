@@ -4,16 +4,16 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  
+  /* justify-content: center ; */
 }
 
 .connect-text h1 {
-  font-size: 8rem;
-  
+  font-size: 7.5rem;
+  margin-bottom: 0;
 }
 
 .connect-text p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .social-icons {
@@ -23,14 +23,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .social-icons a {
-  font-size: 3rem;
+  font-size: 2.5rem;
   background-color: #de9295;
-  height: 5rem;
-  width: 5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

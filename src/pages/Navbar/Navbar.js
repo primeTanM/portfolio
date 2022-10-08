@@ -13,7 +13,7 @@ const Navbar = () => {
   let toDisplay
   if(currentPage.pathname === '/'){
     toDisplay = <div className='name'>
-                  <h1>Tanmay Mishra</h1>
+                  <h1>Tanmay Misra</h1>
                   <p>Software Engineer</p>
                 </div>
   }
