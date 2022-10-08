@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.name {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  padding-left: 10%;
+  
+} 
+
+.name h1 {
+  margin: -1rem;
+}
+
+.name p {
+  /* opacity: 0.7;   */
+  color: #de9295;
+}
+
+.nav-icons {
+  display: flex;
+  width: 50%;
+  justify-content:space-around;
+  font-size: 1.2rem;
+
+}
+
+.nav-icons p {
+  opacity: 0.7;
+  transition:.5s ease-in-out;
+}
+
+.nav-icons p:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #de9295;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-icons p:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  rotate: -30grad;
+
+}
+
+ 
+
+
+.nav-icons p:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.page-header {
+  font-size: 3rem;
+}
+
+.page-header::first-letter {
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #de9295
+}

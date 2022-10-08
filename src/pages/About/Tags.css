@@ -1,0 +1,56 @@
+:root {
+  --color-text: #FFF;
+  --color-front: #de9295;
+  --color-back: #ab7072;
+  --javascript: #f0db4f;
+  --firebase: #ffcb2b;
+  --react-front: #00d8ff;
+  --react-back: #222222;
+  --node-back: #90c53f;
+  --node-front: #46483d;
+  --redux-front: #793fb9;
+
+}
+
+.tag {
+  position: relative;
+  display: inline-block;
+  border-radius: 4rem;
+  background: var(--color-front);
+  padding: 0.8rem 1rem;
+  margin: 10px 8px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  transition: all .2s ease-in-out;  
+}
+
+.js {
+  background: var(--javascript);
+  color: black;
+}
+
+.rjs {
+  background: var(--react-back);
+  color: var(--react-front);
+}
+
+.njs {
+  background: var(--node-back);
+  color: var(--node-front);
+}
+
+.fb {
+  background: var(--firebase);
+  color: black;
+}
+
+.rdx {
+  background: var(--redux-front);
+  color: white;
+}
+
+.tag:hover{
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}

@@ -1,0 +1,131 @@
+
+
+.project-panel {
+  width: 80%;
+  height: 50%;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  
+}
+
+
+.project-panel > div {
+  flex: 0 0 30%;
+  height: 18rem;
+  
+}
+
+
+.proj {
+  border-radius: 1.3rem;  
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s
+}
+
+
+.proj:before {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+  /* font-weight: bold; */
+  padding: 1rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #de9295;;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border-radius: 1.3rem;  
+
+}
+.proj:hover, .proj:focus, .proj:active {
+  color: white;
+  border-radius: 1.3rem;  
+
+  
+}
+.proj:hover:before, .proj:focus:before, .proj:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  border-radius: 1.3rem;  
+
+}
+
+
+.proj-1 {
+  background: url("../../assets/images/excuser.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-1:before{
+  content: "API of different excuses for different situations made using ExpressJS and Nodejs";
+}
+
+.proj-2 {
+  background: url("../../assets/images/moviedb.png");
+  background-size: cover;
+  background-position: center;  
+}
+
+.proj-2:before{
+  content: "An IMDB clone made using Reactjs and Axios from TMDB API";
+}
+
+.proj-3 {
+  background: url("../../assets/images/frontend.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-3:before{
+  content: "Some mini-frontend challenges I did from frontendmentor website";
+}
+
+
+.proj-4 {
+  background: url("../../assets/images/tsa.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-4:before{
+  content: "A NLP based tweet analysis project, I made as a part of my internship at IIT Kanpur";
+}
+
+.proj-5 {
+  background: url("../../assets/images/paradarshita.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.proj-5:before{
+  content: "A Social Complaints app me and my team made as a part of Yhack hackathon 2020";
+}
+
+
+
