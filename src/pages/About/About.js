@@ -53,6 +53,11 @@ const About = () => {
         <br></br>
         <br></br>
         Here are some of the tools and skills I am versed with:
+        
+        Quoting my Quotes
+        “In order to be irreplaceable, one must always be different”
+        “Make it work, make it right, make it fast”
+       
       </div>
 
       <Tags />
