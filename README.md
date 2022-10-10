@@ -11,8 +11,8 @@
 
      If a major change or enhancement
            please create a seperate feature branch as FEATURE_NAME_BRANCH
-      else 
-           contribute to the ```hacktoberfest``` branch
+     else 
+           contribute to the "hacktoberfest" branch
    
 
       
