@@ -9,9 +9,9 @@ const Connect = () => {
   return (
     <motion.div
       className="connect"
-      initial={{ opacity: 0, transistion: {duration : 0.5} }}
-      animate={{ opacity: 1, transistion: {duration : 0.5} }}
-      exit={{ opacity: 0, transistion: {duration : 0.5}}}
+      initial={{ opacity: 0, transistion: { duration: 0.5 } }}
+      animate={{ opacity: 1, transistion: { duration: 0.5 } }}
+      exit={{ opacity: 0, transistion: { duration: 0.5 } }}
       style={{
         background: "#201919",
         width: "100vw",
@@ -40,6 +40,21 @@ const Connect = () => {
           will have a great experience.{" "}
         </p>
 
+        <p style={{
+          fontSize: '1rem', 
+          textAlign: 'center',
+        }}>
+          Made with ♥ by{" "}
+          <a style={{
+            color: '#de9295'
+          }}
+            href="https://github.com/primeTanM/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            primeTanM
+          </a>
+        </p>
         <div className="social-icons">
           <a
             className="linkedin"

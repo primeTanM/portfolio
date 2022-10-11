@@ -1,25 +1,19 @@
-
-
 .project-panel {
   width: 80%;
   height: 50%;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 3rem;
-  
 }
-
 
 .project-panel > div {
   flex: 0 0 30%;
   height: 18rem;
-  
 }
 
-
 .proj {
-  border-radius: 1.3rem;  
+  border-radius: 1.3rem;
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
@@ -30,9 +24,8 @@
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s
+  transition-duration: 0.3s;
 }
-
 
 .proj:before {
   content: "";
@@ -48,7 +41,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #de9295;;
+  background: #de9295;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -59,40 +52,41 @@
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-  border-radius: 1.3rem;  
-
+  border-radius: 1.3rem;
 }
-.proj:hover, .proj:focus, .proj:active {
+.proj:hover,
+.proj:focus,
+.proj:active {
   color: white;
-  border-radius: 1.3rem;  
-
-  
+  border-radius: 1.3rem;
 }
-.proj:hover:before, .proj:focus:before, .proj:active:before {
+.proj:hover:before,
+.proj:focus:before,
+.proj:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
-  border-radius: 1.3rem;  
-
+  border-radius: 1.3rem;
 }
-
 
 .proj-1 {
   background: url("../../assets/images/excuser.png");
   background-size: cover;
   background-position: center;
+  animation-delay: 0.4s;
 }
 
-.proj-1:before{
+.proj-1:before {
   content: "API of different excuses for different situations made using ExpressJS and Nodejs";
 }
 
 .proj-2 {
   background: url("../../assets/images/moviedb.png");
   background-size: cover;
-  background-position: center;  
+  background-position: center;
+  animation-delay: 0.8s;
 }
 
-.proj-2:before{
+.proj-2:before {
   content: "An IMDB clone made using Reactjs and Axios from TMDB API";
 }
 
@@ -100,20 +94,21 @@
   background: url("../../assets/images/frontend.png");
   background-size: cover;
   background-position: center;
+  animation-delay: 1.2s;
 }
 
-.proj-3:before{
+.proj-3:before {
   content: "Some mini-frontend challenges I did from frontendmentor website";
 }
-
 
 .proj-4 {
   background: url("../../assets/images/tsa.png");
   background-size: cover;
   background-position: center;
+  animation-delay: 1.6s;
 }
 
-.proj-4:before{
+.proj-4:before {
   content: "A NLP based tweet analysis project, I made as a part of my internship at IIT Kanpur";
 }
 
@@ -121,11 +116,39 @@
   background: url("../../assets/images/paradarshita.png");
   background-size: cover;
   background-position: center;
+  animation-delay: 2s;
 }
 
-.proj-5:before{
+.proj-5:before {
   content: "A Social Complaints app me and my team made as a part of Yhack hackathon 2020";
 }
 
-
-
+.proj {
+  opacity: 0;
+  animation: fade-in-delay 1s forwards;
+}
+.proj:nth-child(1) {
+  animation-delay: 200ms;
+}
+.proj:nth-child(2) {
+  animation-delay: 400ms;
+}
+.proj:nth-child(3) {
+  animation-delay: 600ms;
+}
+.proj:nth-child(4) {
+  animation-delay: 800ms;
+}
+.proj:nth-child(5) {
+  animation-delay: 1000ms;
+}
+@keyframes fade-in-delay {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
