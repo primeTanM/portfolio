@@ -7,9 +7,10 @@ const About = () => {
   return (
     <motion.div
       className="about-div"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transistion: { duration: 0.3 } }}
+      // custom="sync"
+      initial={{x:500, opacity: 0 }}
+      animate={{x: 0, opacity: 1, transition:{duration: 0.5, ease:'easeOut'}}}
+      exit={{ x: -500, opacity: 0,  transition:{duration: 0.5, ease:'easeIn'}}}
       style={{
         background: "#201919",
         width: "100vw",
