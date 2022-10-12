@@ -8,7 +8,9 @@ const Projects = () => {
       className="project-div"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, transistion: { duration: 0.3 } }}
+      // exit={{ opacity: 0, transistion: { duration: 0.3 } }}
+      exit={{ x: -500, opacity: 0,  transition:{duration: 0.5, ease:'easeIn'}}}
+
       style={{
         background: "#201919",
         width: "100vw",
