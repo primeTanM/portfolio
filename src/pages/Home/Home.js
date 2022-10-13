@@ -37,31 +37,31 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <motion.div
-        className="home-div"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0, transistion: { duration: 0.3 } }}
-        style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${background})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center center",
-          backgroundSize: "cover",
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          top: "0",
-          bottom: "0",
-          right: "0",
-          left: "0",
-          zIndex: "-1",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <div className="arrowDiv">
+    <motion.div
+      className="home-div"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      // exit={{ opacity: 0, transistion: {duration : 0.3}}}
+      exit={{ x: -100, opacity: 0,  transition:{duration: 0.3, ease:'easeIn'}}}
+      style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
+        backgroundSize: "cover",
+        width: "100vw",
+        height: "100vh",
+        position: "absolute",
+        top: "0",
+        bottom: "0",
+        right: "0",
+        left: "0",
+        zIndex: "-1",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div className="arrowDiv">
           <Link style={{ textDecoration: "None" }} to="/contact">
             <AiOutlineLeft
               style={{ color: "white", fontSize: "50px", marginLeft: "5px" }}
@@ -73,13 +73,12 @@ const Home = () => {
             />
           </Link>
         </div>
-        <div className="intro">
-          <h1 className="me">I'm </h1>
-          <h1>
-            <span ref={el}></span>
-          </h1>
-        </div>
-
+      <div className="intro">
+        <h1 className="me">I'm </h1>
+        <h1>
+          <span ref={el}></span>
+        </h1>
+      </div>
         <div
           onClick={() =>
             window.open(
