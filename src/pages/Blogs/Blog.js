@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion/dist/framer-motion";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import {  Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -27,6 +29,18 @@ const Blog = () => {
         alignItems: "center",
       }}
     >
+      <div className="arrowDiv">
+          <Link style={{ textDecoration: "None" }} to="/projects">
+            <AiOutlineLeft
+              style={{ color: "white", fontSize: "50px", marginLeft: "5px" }}
+            />
+          </Link>
+          <Link style={{ textDecoration: "None" }} to="/contact">
+            <AiOutlineRight
+              style={{ color: "white", fontSize: "50px", marginRight: "5px" }}
+            />
+          </Link>
+        </div>
       <p style={{ fontSize: "2rem" }}>Coming Soon...</p>
       <img
         src={
