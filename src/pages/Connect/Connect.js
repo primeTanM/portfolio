@@ -12,9 +12,9 @@ const Connect = () => {
       // initial={{x: 0, opacity: 0}}
       // animate={{x:0, opacity: 1, duration: 3000}}
       // exit={{x:-100, opacity: 0, duration: 3000}}
-      initial={{x:500, opacity: 0 }}
-      animate={{x: 0, opacity: 1, transition:{duration: 0.5, ease:'easeOut'}}}
-      exit={{ x: -500, opacity: 0,  transition:{duration: 0.5, ease:'easeIn'}}}
+      initial={{x: 100, opacity: 0 }}
+      animate={{x: 0, opacity: 1, transition:{duration: 0.3, ease:'easeOut'}}}
+      exit={{x:-100, opacity: 0,  transition:{duration: 0.3, ease:'easeIn'}}}
       // entry={{ opacity: 1, transistion: { duration: 0.5} }}
       style={{
         background: "#201919",
