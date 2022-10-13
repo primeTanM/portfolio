@@ -52,7 +52,7 @@ const Connect = () => {
           !
         </h1>
         <p>
-          Or not.If you are someone who likes FRIENDS, Attack on Titan, loves
+          Or not. If you are someone who likes FRIENDS, Attack on Titan, loves
           playing Table Tennis and Rocket League, or gets lost in space from
           time to time, or just want to chat, get in touch in me. I am sure we
           will have a great experience.{" "}
