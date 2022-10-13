@@ -2,7 +2,6 @@
   color: rgb(228, 237, 247);
   font-family: 'Poppins', sans-serif;
 }
-
 .home-div h1 {
   font-size: 5rem;
 }
@@ -115,4 +114,14 @@ span {
   transition: opacity .25s;
   -webkit-animation: 0;
   animation: 0;
+}
+
+.arrowDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
 }
