@@ -2,6 +2,8 @@ import React from "react";
 import Tags from "./Tags";
 import "./About.css";
 import { motion } from "framer-motion/dist/framer-motion";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import {  Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -27,6 +29,18 @@ const About = () => {
         alignItems: "center",
       }}
     >
+      <div className="arrowDiv">
+          <Link style={{ textDecoration: "None" }} to="/">
+            <AiOutlineLeft
+              style={{ color: "white", fontSize: "50px", marginLeft: "5px" }}
+            />
+          </Link>
+          <Link style={{ textDecoration: "None" }} to="/projects">
+            <AiOutlineRight
+              style={{ color: "white", fontSize: "50px", marginRight: "5px" }}
+            />
+          </Link>
+        </div>
       <div
         className="about-para"
         style={{

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Projects.css";
 import { motion } from "framer-motion/dist/framer-motion";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import {  Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -27,6 +29,18 @@ const Projects = () => {
         alignItems: "center",
       }}
     >
+      <div className="arrowDiv">
+          <Link style={{ textDecoration: "None" }} to="/about">
+            <AiOutlineLeft
+              style={{ color: "white", fontSize: "50px", marginLeft: "5px" }}
+            />
+          </Link>
+          <Link style={{ textDecoration: "None" }} to="/blogs">
+            <AiOutlineRight
+              style={{ color: "white", fontSize: "50px", marginRight: "5px" }}
+            />
+          </Link>
+        </div>
       <div className="project-panel">
         <div
           onClick={() =>

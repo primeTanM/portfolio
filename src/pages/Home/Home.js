@@ -4,6 +4,8 @@ import "./Home.css";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion/dist/framer-motion";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import {  Link } from "react-router-dom";
 
 const Home = () => {
   const el = useRef(null);
@@ -59,6 +61,18 @@ const Home = () => {
         alignItems: "center",
       }}
     >
+      <div className="arrowDiv">
+          <Link style={{ textDecoration: "None" }} to="/contact">
+            <AiOutlineLeft
+              style={{ color: "white", fontSize: "50px", marginLeft: "5px" }}
+            />
+          </Link>
+          <Link style={{ textDecoration: "None" }} to="/about">
+            <AiOutlineRight
+              style={{ color: "white", fontSize: "50px", marginRight: "5px" }}
+            />
+          </Link>
+        </div>
       <div className="intro">
         <h1 className="me">I'm </h1>
         <h1>
