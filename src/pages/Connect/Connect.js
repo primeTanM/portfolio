@@ -96,7 +96,7 @@ const Connect = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsInstagram />
+            <BsInstagram className="instaIcon" />
           </a>
           <a
             className="dev"
